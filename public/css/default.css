@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+html {
+	overflow-y: scroll !important;
+	overflow-x: hidden !important;
+}
+
+body {
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 1%;
+	background: #E0EAFC;
+	background: -webkit-linear-gradient(to left, #E0EAFC, #CFDEF3);
+	background: linear-gradient(to left, #E0EAFC, #CFDEF3);
+}
+
+ul {
+	list-style: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.admin-link {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}

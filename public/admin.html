@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>MITBet</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/default.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+  
+	<div class="well">
+	  <h1 class="text-center">Admin</h1>
+	</div>
+
+	<div class="container">
+	
+	<div class="panel-group">
+	<div class="panel panel-default">
+	<div class="panel-heading">
+	<a data-toggle="collapse" href="#collapseAll" class="expand">Alla användare</a>
+	</div>
+	<div id="collapseAll" class="panel-collapse collapse">
+	<ul class="list-group res-admin">
+	</ul>
+	</div>
+	</div>
+	</div>
+	
+	  <div class="row">
+		<div class="col-sm-4">
+		  <h4>Ändra poäng för en användare:</h4>
+		  <form>
+			<div class="form-group">
+			  <label for="fname1">firstname:</label>
+			  <input type="text" class="form-control edit-input" id="fname1">
+			</div>
+			<div class="form-group">
+			  <label for="sname1">surname:</label>
+			  <input type="text" class="form-control edit-input" id="sname1">
+			</div>
+			<div class="form-group">
+			  <label for="email1">email:</label>
+			  <input type="email" class="form-control edit-input" id="email1">
+			</div>
+			<div class="form-group">
+			  <label for="pts1">points:</label>
+			  <input type="number" class="form-control edit-input" id="pts1">
+			</div>
+			<button type="button" class="btn btn-default edit-user">Edit</button>
+		  </form>
+		</div>
+		
+		<div class="col-sm-4">
+		  <h4>Lägg till användare:</h4>
+		  <form>
+			<div class="form-group">
+			  <label for="fname2">firstname:</label>
+			  <input type="text" class="form-control add-input" id="fname2">
+			</div>
+			<div class="form-group">
+			  <label for="sname2">surname:</label>
+			  <input type="text" class="form-control add-input" id="sname2">
+			</div>
+			<div class="form-group">
+			  <label for="email2">email:</label>
+			  <input type="email" class="form-control add-input" id="email2">
+			</div>
+			<div class="form-group">
+			  <label for="pts2">points:</label>
+			  <input type="number" class="form-control add-input" id="pts2">
+			</div>
+			<button type="button" class="btn btn-default add-user">Add</button>
+		  </form>
+		</div>
+		
+		<div class="col-sm-4">
+		  <h4>Ta bort användare:</h4>
+		  <form>
+			<div class="form-group">
+			  <label for="email-del">email:</label>
+			  <input type="email" class="form-control del-input" id="email-del">
+			</div>
+			<button type="button" class="btn btn-default del-user">Delete</button>
+		  </form>
+		</div>
+		
+	  </div>
+	</div>
+	
+    <a class="admin-link" href="/">home</a>
+	
+    <!-- Scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/default.js"></script>
+  </body>
+
+</html>
