@@ -29,7 +29,7 @@ $(document).ready(function() {
 		$.each(data, function(k, v) {
 			var li = $('<li/>')
 			.addClass('list-group-item')
-			.text('firstname: ' + v._source.firstname + ' | ' + 'surname: ' + v._source.surname + ' | ' + 'email: ' + v._source.email + ' | ' + 'points: ' + v._source.points)
+			.text('firstname: ' + v._source.firstname + ' | ' + 'surname: ' + v._source.surname + ' | ' + 'email: ' + v._source.email + ' | ' + 'points: ' + v._source.points + ' | ' + 'id: ' + v._id)
 			.appendTo(aList);
 		});
 	  }
@@ -100,11 +100,11 @@ $(document).ready(function() {
 			return false;
 		}
 		else {
-			var em = $('#email-del').val();
+			var _id = $('#id-del').val();
 			
 			$.post("/admin/delete",
 			{
-				email: em
+				id: _id
 			})
 			.done(function() {
 				$('form').find("input[type=text], input[type=number] ,input[type=email]").val("");

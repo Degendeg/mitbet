@@ -98,15 +98,11 @@ app.post('/admin/edit', bodyParser.urlencoded({extended: false}), function(req, 
  * Admin - delete user
  */
 app.post('/admin/delete', bodyParser.urlencoded({extended: false}), function(req, res) {
-	client2.deleteByQuery({
-	  index: "users",
-	  type: "info",
-	  body: {
-	   query: {
-		   match: { email: req.body.email }
-	   }
-	  }
-	}, function (error, response) {
+	client2.bulk({
+	  body: [
+		{ delete: { _index: 'users', _type: 'info', _id: req.body.id } },
+	  ]
+	}, function (err, resp) {
 	});
 	res.send(204);
 	console.log('user deleted!');

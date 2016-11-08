@@ -11,9 +11,6 @@ body {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin: 1%;
-	background: #E0EAFC;
-	background: -webkit-linear-gradient(to left, #E0EAFC, #CFDEF3);
-	background: linear-gradient(to left, #E0EAFC, #CFDEF3);
 }
 
 ul {
