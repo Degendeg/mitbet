@@ -71,6 +71,7 @@ $(document).ready(function() {
 			return false;
 		}
 		else {
+			var id_ = $('#id-change').val();
 			var fname = $('#fname1').val();
 			var sname = $('#sname1').val();
 			var _email = $('#email1').val();
@@ -81,7 +82,8 @@ $(document).ready(function() {
 				firstname: fname,
 				surname: sname,
 				email: _email,
-				points: _points
+				points: _points,
+				id: id_
 			})
 			.done(function() {
 				$('form').find("input[type=text], input[type=number] ,input[type=email]").val("");
