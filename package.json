@@ -1,7 +1,7 @@
 {
-  "name": "code-assignment",
+  "name": "mitbet",
   "version": "1.0.0",
-  "description": "code assignment",
+  "description": "MIT Bet",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
